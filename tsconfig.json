@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "jsx": "react",
+      "sourceMap": false,
+      "declaration": true,
+      "outDir": "./js",
+      "watch": true
+  },
+  "exclude": [ "node_modules" ],
+  "files": [
+    "./ts/app.ts",
+    "./ts/ui/main.tsx"
+  ]
+}
