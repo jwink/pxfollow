@@ -1,6 +1,7 @@
 
 import * as path from 'path';
 import * as express from 'express';
+import {PriceData} from './getdata';
 
 let app = express();
 
@@ -11,7 +12,7 @@ app.get('/', (req: express.Request, res: express.Response, next: express.NextFun
 });
 
 app.get('/update/:symbol', (req: express.Request, res: express.Response, next: express.NextFunction) => {
-  console.log(req.params);
+  console.log(req.params);  
   res.redirect('/');
   next();
 });
