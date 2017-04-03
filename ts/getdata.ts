@@ -14,6 +14,9 @@ export interface IPriceData {
 }
 
 export class PriceData implements IPriceData{
+    constructor() {
+        
+    }
     public testFunc() {
         console.log("in test fun");
     }

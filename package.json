@@ -8,6 +8,7 @@
     "@types/node": "^6.0.42",
     "@types/react": "^0.14.38",
     "@types/react-dom": "^0.14.17",
+    "@types/sqlite3": "^2.2.31",
     "express": "^4.14.0",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",

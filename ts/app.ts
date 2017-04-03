@@ -7,11 +7,14 @@ let app = express();
 
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.get('/', (req: express.Request, res: express.Response, next: express.NextFunction) => {
-  next();
-});
+// app.get('/', (req: express.Request, res: express.Response, next: express.NextFunction) => {
+//   next();
+// });
 
 app.get('/update/:symbol', (req: express.Request, res: express.Response, next: express.NextFunction) => {
+  let npd = new PriceData;
+  console.log("in slash");
+  npd.testFunc();
   console.log(req.params);  
   res.redirect('/');
   next();
